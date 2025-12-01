@@ -15,9 +15,7 @@ export default function Header() {
 
                 <nav className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wider">
                     <Link href="#news" className="hover:text-accent transition-colors">NEWS</Link>
-                    <Link href="#schedule" className="hover:text-accent transition-colors">SCHEDULE</Link>
-                    <Link href="#live" className="hover:text-accent transition-colors">LIVE</Link>
-                    <Link href="#video" className="hover:text-accent transition-colors">VIDEO</Link>
+                    <Link href="#musicVideo" className="hover:text-accent transition-colors">VIDEO</Link>
                     <Link href="#goods" className="hover:text-accent transition-colors">GOODS</Link>
                     <Link href="#contact" className="hover:text-accent transition-colors">CONTACT</Link>
                 </nav>
