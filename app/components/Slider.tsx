@@ -27,7 +27,7 @@ export default function Slider() {
 
   return (
     <>
-<section id="musicVideo" >
+<section id="musicVideo" className=" py-20">
    <h2 className="text-4xl font-bold text-center mb-12 tracking-widest font-heading">MUSIC VIDEOS</h2>
   
       <Swiper
@@ -65,7 +65,7 @@ export default function Slider() {
                 duration-500
                 ease-in-out
                 group-hover:grayscale
-                group-hover:scale-105 "
+                group-hover:scale-105"
                 alt=""
               />
               
@@ -81,6 +81,14 @@ export default function Slider() {
         })}
       
       </Swiper>
+
+
+          <div className="text-center mt-12">
+                <Link href="https://www.youtube.com/@suragi6832/videos"
+                target="_blank" className="inline-block border border-white/30 px-8 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition-colors">
+                    VIEW ALL
+                </Link>
+            </div>
  </section>
  </>
 

@@ -1,4 +1,4 @@
-import { Song, NewsDate,video} from "./types"
+import { Song, NewsDate} from "./types"
 
 
 
@@ -42,14 +42,16 @@ export const Songs:Song[] = [
 ]
 
 export const NewsDates:NewsDate[] =[
-  {id:'1',date:'2020/11/3',content:"記事内容"},
-  {id:'2',date:'2020/11/3',content:"記事内容"},
-  {id:'3',date:'2020/11/3',content:"記事内容"},
-  {id:'4',date:'2020/11/3',content:"記事内容"},
-  {id:'5',date:'2020/11/3',content:"記事内容"},
-  {id:'6',date:'2020/11/3',content:"記事内容"},
+  {id:1,date:'2010/11/3',content:"記事内容"},
+  {id:2,date:'2020/11/3',content:"記事内容"},
+  {id:3,date:'2030/11/3',content:"記事内容"},
+  {id:4,date:'2020/11/3',content:"記事内容"},
+  {id:5,date:'2020/11/3',content:"記事内容"},
+  {id:6,date:'2020/11/3',content:"記事内容"},
+  {id:7,date:'2020/11/3',content:"記事内容"},
+  {id:8,date:'2020/11/3',content:"記事内容"},
+  {id:9,date:'2020/11/3',content:"記事内容"},
+  {id:10,date:'2020/11/3',content:"記事内容"},
+  {id:11,date:'2020/11/3',content:"wwwwww"},
 ]
 
-export const Video:video[]=[
-  {id:'1',data:'/1201_131153_Share_00001.mp4'}
-]

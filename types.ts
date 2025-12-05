@@ -6,12 +6,8 @@ export interface Song{
 }
 
 export interface NewsDate{
-  id:string;
+  id:number;
   date:string;
   content:string;
 }
 
-export interface video{
-  id:string;
-  data:string;
-}

@@ -14,10 +14,11 @@ export default function Header() {
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wider">
-                    <Link href="#news" className="hover:text-accent transition-colors">NEWS</Link>
-                    <Link href="#musicVideo" className="hover:text-accent transition-colors">VIDEO</Link>
-                    <Link href="#goods" className="hover:text-accent transition-colors">GOODS</Link>
-                    <Link href="#contact" className="hover:text-accent transition-colors">CONTACT</Link>
+                    <Link href="/#top" className="hover:text-accent transition-colors">TOP</Link>
+                    <Link href="/#news" className="hover:text-accent transition-colors">NEWS</Link>
+                    <Link href="/#musicVideo" className="hover:text-accent transition-colors">VIDEO</Link>
+                    <Link href="/#goods" className="hover:text-accent transition-colors">GOODS</Link>
+                    <Link href="/#contact" className="hover:text-accent transition-colors">CONTACT</Link>
                 </nav>
 
                 <div className="md:hidden">
@@ -32,13 +33,13 @@ export default function Header() {
             {/* Mobile Menu Overlay */}
             <div className={`fixed inset-0 bg-black z-40 flex flex-col items-center justify-center transition-opacity duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
                 <nav className="flex flex-col items-center gap-8 text-xl font-medium tracking-wider">
-                    <Link href="#news" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">NEWS</Link>
-                    <Link href="#schedule" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">SCHEDULE</Link>
-                    <Link href="#live" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">LIVE</Link>
-                    <Link href="#media" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">MEDIA</Link>
-                    <Link href="#video" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">VIDEO</Link>
-                    <Link href="#goods" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">GOODS</Link>
-                    <Link href="#contact" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">CONTACT</Link>
+                    <Link href="/#news" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">NEWS</Link>
+                    <Link href="/#schedule" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">SCHEDULE</Link>
+                    <Link href="/#live" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">LIVE</Link>
+                    <Link href="/#media" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">MEDIA</Link>
+                    <Link href="/#video" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">VIDEO</Link>
+                    <Link href="/#goods" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">GOODS</Link>
+                    <Link href="/#contact" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">CONTACT</Link>
                 </nav>
             </div>
         </header>

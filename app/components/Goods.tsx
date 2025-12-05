@@ -1,6 +1,6 @@
 export default function Goods() {
     return (
-        <section id="goods" className="py-20 px-4 max-w-6xl mx-auto">
+        <section id="goods" className="py-20 px-4 max-w-6xl mx-auto ">
             <h2 className="text-4xl font-bold text-center mb-12 tracking-widest font-heading">GOODS</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {[1, 2, 3, 4].map((item) => (
