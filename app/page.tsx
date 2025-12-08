@@ -1,11 +1,12 @@
 
 import Header from "./components/Header";
 import News from "./components/News";
-import Goods from "./components/Goods";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
 import Top from "./components/Top";
+import CoseCommission from "./components/Cose";
+
 
 
 
@@ -16,10 +17,11 @@ export default function Home() {
       <Top />
       <News />
       <Slider />
-      <Goods />
+      <CoseCommission />
       <Contact />
       <Footer />
     </main>
   );
 }
+
 
