@@ -1,58 +1,9 @@
 'use client';
 
+import { plans } from '@/information';
 import React, { useState } from 'react';
 
-// コース情報のデータ定義
-const plans = [
-  {
-    id: 'composition',
-    title: 'Composition',
-    jpTitle: '作曲・編曲',
-    description: 'あなたのイメージを形にする、オリジナル楽曲の制作を行います。歌モノからBGMまで幅広く対応可能です。',
-    detailDescription: 'ご希望のジャンルやリファレンス楽曲をもとに、デモ制作から完パケまで行います。楽器の生録音が必要な場合や、譜面作成が必要な場合もオプションにて対応可能です。',
-    price: '¥30,000',
-    priceSuffix: '〜',
-    features: ['ジャンル不問', '修正2回まで無料', 'ステムデータ納品可', 'ラフ提案：1週間〜'],
-    buttonText: '詳細を見る',
-    isCustomQuote: false,
-  },
-  {
-    id: 'mix',
-    title: 'Mixing',
-    jpTitle: 'MIX・マスタリング',
-    description: '歌ってみた動画やオリジナル楽曲の魅力を最大限に引き出すミックスダウンを提供します。',
-    detailDescription: 'ボーカルのピッチ・タイミング補正を丁寧に行い、オケとの馴染みを調整します。2mix納品に加え、マスタリング済みの音源もお渡しします。',
-    price: '¥5,000',
-    priceSuffix: '〜',
-    features: ['ピッチ・タイミング補正込', 'ノイズ除去', 'マスタリング込', 'トラック数制限なし'],
-    buttonText: '詳細を見る',
-    isCustomQuote: false,
-  },
-  {
-    id: 'mv',
-    title: 'Music Video',
-    jpTitle: 'ミュージックビデオ',
-    description: '楽曲の世界観を広げる映像制作。リリックビデオから実写編集まで対応します。',
-    detailDescription: 'イラスト一枚からのリリックビデオ制作や、撮影素材のカット編集、エフェクト追加など。YouTubeやSNSに最適なフォーマットで書き出します。',
-    price: '¥15,000',
-    priceSuffix: '〜',
-    features: ['4K画質対応', 'YouTube用エンコード', 'サムネイル作成可', '納期：2週間〜'],
-    buttonText: '詳細を見る',
-    isCustomQuote: false,
-  },
-  {
-    id: 'others',
-    title: 'Others',
-    jpTitle: 'その他・ご相談',
-    description: '仮歌、ナレーション、楽器演奏、コンサルティングなど、音楽に関わることなら何でもご相談ください。',
-    detailDescription: '上記メニューにない内容でも、音楽に関わることであれば柔軟に対応いたします。予算が決まっている場合なども、まずはお気軽にご連絡ください。',
-    price: 'Ask',
-    priceSuffix: '',
-    features: ['柔軟な対応', '急ぎの案件も相談可', '予算に合わせた提案'],
-    buttonText: '詳細を見る',
-    isCustomQuote: true,
-  },
-];
+
 
 export default function CoseCommission() {
   // モーダルの状態管理
@@ -61,7 +12,6 @@ export default function CoseCommission() {
   // モーダルを開く
   const handleOpen = (plan: typeof plans[0]) => {
     setSelectedPlan(plan);
-    document.body.style.overflow = 'hidden'; // 背景スクロール固定
   };
 
   // モーダルを閉じる
@@ -70,23 +20,13 @@ export default function CoseCommission() {
     document.body.style.overflow = 'auto'; // 背景スクロール解除
   };
 
-  // フォームへスクロールして閉じる関数
-  const scrollToContact = () => {
-    handleClose();
-    // ページ内の id="contact" または id="contact-form" の要素を探してスクロール
-    const contactSection = document.getElementById('contact') || document.getElementById('contact-form');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="py-20 bg-neutral-900 text-white" id="commission">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* セクションヘッダー */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          <h2 className="text-4xl md:text-4xl font-bold tracking-tight mb-4">
             COMMISSION
           </h2>
           <p className="text-neutral-400 max-w-2xl mx-auto">
@@ -94,8 +34,11 @@ export default function CoseCommission() {
           </p>
         </div>
 
-        {/* グリッドレイアウト */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* グリッドレイアウト 
+            lg:grid-cols-4 から lg:grid-cols-3 に変更し、
+            アイテムが5つになった際にバランスよく見えるようにしました 
+        */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {plans.map((plan) => (
             <div 
               key={plan.id}
@@ -222,12 +165,6 @@ export default function CoseCommission() {
 
               {/* フッターアクション */}
               <div className="p-6 border-t border-neutral-700 bg-neutral-900/50 flex flex-col sm:flex-row gap-3">
-                <button 
-                  onClick={scrollToContact}
-                  className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-lg transition-colors text-center"
-                >
-                  この内容で相談する
-                </button>
                 <button 
                   onClick={handleClose}
                   className="sm:w-auto w-full bg-transparent border border-neutral-600 text-neutral-300 hover:text-white hover:border-white font-bold py-3 px-6 rounded-lg transition-colors"

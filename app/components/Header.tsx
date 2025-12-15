@@ -17,7 +17,7 @@ export default function Header() {
                     <Link href="/#top" className="hover:text-accent transition-colors">TOP</Link>
                     <Link href="/#news" className="hover:text-accent transition-colors">NEWS</Link>
                     <Link href="/#musicVideo" className="hover:text-accent transition-colors">VIDEO</Link>
-                    <Link href="/#goods" className="hover:text-accent transition-colors">GOODS</Link>
+                    <Link href="/#commission" className="hover:text-accent transition-colors">COSE</Link>
                     <Link href="/#contact" className="hover:text-accent transition-colors">CONTACT</Link>
                 </nav>
 
@@ -30,18 +30,92 @@ export default function Header() {
                 </div>
             </div>
 
-            {/* Mobile Menu Overlay */}
-            <div className={`fixed inset-0 bg-black z-40 flex flex-col items-center justify-center transition-opacity duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
-                <nav className="flex flex-col items-center gap-8 text-xl font-medium tracking-wider">
-                    <Link href="/#news" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">NEWS</Link>
-                    <Link href="/#schedule" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">SCHEDULE</Link>
-                    <Link href="/#live" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">LIVE</Link>
-                    <Link href="/#media" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">MEDIA</Link>
-                    <Link href="/#video" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">VIDEO</Link>
-                    <Link href="/#goods" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">GOODS</Link>
-                    <Link href="/#contact" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">CONTACT</Link>
+ {/* Mobile Menu Overlay */}
+            <div 
+                className={`
+                    fixed top-0 left-0 w-screen h-[100dvh] z-40
+                    flex flex-col items-center justify-center
+                    /* 背景色: 濃いグレー + 透過(95%) + ブラー(ぼかし) */
+                    bg-[#1a1a1a]/95 backdrop-blur-sm
+                    transition-all duration-300 ease-in-out
+                    ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}
+                `}
+            >
+                <nav className="w-full h-full flex flex-col items-center justify-center gap-8 md:gap-10 pt-16">
+                    
+                    {/* TOP */}
+                    <div 
+                        className={`transition-transform duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                        style={{ transitionDelay: isOpen ? '100ms' : '0ms' }}
+                    >
+                        <Link 
+                            href="/#top" 
+                            onClick={() => setIsOpen(false)} 
+                            className="text-3xl font-black text-white tracking-[0.2em] hover:text-gray-400 transition-colors uppercase"
+                        >
+                            TOP
+                        </Link>
+                    </div>
+
+                    {/* NEWS */}
+                    <div 
+                        className={`transition-transform duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                        style={{ transitionDelay: isOpen ? '150ms' : '0ms' }}
+                    >
+                        <Link 
+                            href="/#news" 
+                            onClick={() => setIsOpen(false)} 
+                            className="text-3xl font-black text-white tracking-[0.2em] hover:text-gray-400 transition-colors uppercase"
+                        >
+                            NEWS
+                        </Link>
+                    </div>
+
+                    {/* VIDEO */}
+                    <div 
+                        className={`transition-transform duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                        style={{ transitionDelay: isOpen ? '200ms' : '0ms' }}
+                    >
+                        <Link 
+                            href="/#musicVideo" 
+                            onClick={() => setIsOpen(false)} 
+                            className="text-3xl font-black text-white tracking-[0.2em] hover:text-gray-400 transition-colors uppercase"
+                        >
+                            VIDEO
+                        </Link>
+                    </div>
+
+                    {/* COSE */}
+                    <div 
+                        className={`transition-transform duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                        style={{ transitionDelay: isOpen ? '250ms' : '0ms' }}
+                    >
+                        <Link 
+                            href="/#commission" 
+                            onClick={() => setIsOpen(false)} 
+                            className="text-3xl font-black text-white tracking-[0.2em] hover:text-gray-400 transition-colors uppercase"
+                        >
+                            COSE
+                        </Link>
+                    </div>
+
+                    {/* CONTACT */}
+                    <div 
+                        className={`transition-transform duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                        style={{ transitionDelay: isOpen ? '300ms' : '0ms' }}
+                    >
+                        <Link 
+                            href="/#contact" 
+                            onClick={() => setIsOpen(false)} 
+                            className="text-3xl font-black text-white tracking-[0.2em] hover:text-gray-400 transition-colors uppercase"
+                        >
+                            CONTACT
+                        </Link>
+                    </div>
+
                 </nav>
             </div>
+        
         </header>
     );
 }

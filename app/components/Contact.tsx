@@ -74,7 +74,7 @@ return (
             <textarea {...register('message')} rows={6} className="w-full bg-white border border-gray-300 p-3 focus:outline-none focus:border-accent"></textarea>
         </div>
         <div className="text-center pt-6">
-            <button type="submit" disabled={isSubmitting} className="bg-black text-white px-12 py-4 text-sm font-bold tracking-widest hover:bg-accent transition-colors">
+            <button type="submit" disabled={isSubmitting} className="bg-black text-white px-12 py-4 text-sm font-bold tracking-widest hover:bg-neutral-400 hover:text-black transition-colors">
                {isSubmitting ? '送信中...' : '送信'}
             </button>
 
