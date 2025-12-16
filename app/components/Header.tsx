@@ -17,6 +17,7 @@ export default function Header() {
                     <Link href="/#top" className="hover:text-accent transition-colors">TOP</Link>
                     <Link href="/#news" className="hover:text-accent transition-colors">NEWS</Link>
                     <Link href="/#musicVideo" className="hover:text-accent transition-colors">VIDEO</Link>
+                    <Link href="/#profile" className="hover:text-accent transition-colors">PROFILE</Link>
                     <Link href="/#commission" className="hover:text-accent transition-colors">COSE</Link>
                     <Link href="/#contact" className="hover:text-accent transition-colors">CONTACT</Link>
                 </nav>
@@ -82,6 +83,19 @@ export default function Header() {
                             className="text-3xl font-black text-white tracking-[0.2em] hover:text-gray-400 transition-colors uppercase"
                         >
                             VIDEO
+                        </Link>
+                    </div>
+                    {/* PROFILE */}
+                    <div 
+                        className={`transition-transform duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                        style={{ transitionDelay: isOpen ? '200ms' : '0ms' }}
+                    >
+                        <Link 
+                            href="/#profile" 
+                            onClick={() => setIsOpen(false)} 
+                            className="text-3xl font-black text-white tracking-[0.2em] hover:text-gray-400 transition-colors uppercase"
+                        >
+                            PROFILE
                         </Link>
                     </div>
 

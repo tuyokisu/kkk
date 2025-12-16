@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Slider from "./components/Slider";
 import Top from "./components/Top";
 import CoseCommission from "./components/Cose";
+import ProfileCard from "./components/Profile";
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Top />
       <News />
       <Slider />
+      <ProfileCard />
       <CoseCommission />
       <Contact />
       <Footer />
