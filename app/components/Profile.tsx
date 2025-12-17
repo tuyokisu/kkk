@@ -18,7 +18,7 @@ export default function ProfileCard() {
             SURAGI
           </h3>
           <p className="text-blue-500 font-bold tracking-widest uppercase text-sm">
-            Composer / Arranger
+            クリエイーター / アーティスト
           </p>
         </div>
 
