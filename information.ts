@@ -171,8 +171,8 @@ export const Dsong = [
     id: '1',
     img: "/oga0.png",
     title: "test",
-    mix: "/mix/test copy 4.wav",
-    master: "/master/test.wav"
+    mix: "/mix/testcopy3.wav",
+    master: "/mix/testcopy2.wav"
   },
   {
     id: '2',

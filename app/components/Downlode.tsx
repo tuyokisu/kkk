@@ -45,10 +45,10 @@ export default function Dowlode() {
                                         <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-4 md:mb-0">{item.title}</h3>
 
                                         <div className="mt-4 md:mt-0 flex flex-col gap-3">
-                                            <a href={`${item.mix}?download=1`} download className="inline-block border border-white/30 px-8 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition-colors text-center">
+                                            <a href={`${item.mix}`} download className="inline-block border border-white/30 px-8 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition-colors text-center">
                                                 2MIX
                                             </a>
-                                            <a href={`${item.master}?download=1`} download className="inline-block border border-white/30 px-8 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition-colors text-center">
+                                            <a href={`${item.master}`} download className="inline-block border border-white/30 px-8 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition-colors text-center">
                                                 マスタリング済み
                                             </a>
                                         </div>
