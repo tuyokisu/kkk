@@ -160,8 +160,8 @@ export const Nsong = [
     id: '1',
     img: "/oga0.png",
     data: "2026/1/1",
-    title: "まんこ",
-    url: "/movie/fukai.mp4"
+    title: "test",
+    url: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/%E9%A2%A8%E6%87%90%E5%AE%8C%E6%88%90_1.mp4"
   },
 ]
 
@@ -170,43 +170,50 @@ export const Dsong = [
   {
     id: '1',
     img: "/oga0.png",
-    title: "まんこ",
-    url: "/songs/test.wav"
+    title: "test",
+    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
+    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
   },
   {
     id: '2',
     img: "/oga0.png",
-    title: "まんこ",
-    url: "/songs/test.wav"
+    title: "test",
+    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
+    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
   },
   {
     id: '3',
     img: "/oga0.png",
-    title: "まんこ",
-    url: "/songs/test.wav"
+    title: "test",
+    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
+    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
   },
   {
     id: '4',
     img: "/oga0.png",
-    title: "まんこ",
-    url: "/songs/test.wav"
+    title: "test",
+    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
+    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
   },
   {
     id: '5',
     img: "/oga0.png",
-    title: "まんこ",
-    url: "/songs/test.wav"
+    title: "test",
+    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
+    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
   },
   {
     id: '6',
     img: "/oga0.png",
-    title: "まんこ",
-    url: "/songs/test.wav"
+    title: "test",
+    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
+    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
   },
   {
     id: '7',
     img: "/oga0.png",
-    title: "まんこ", 
-    url: "/songs/test.wav"
+    title: "test", 
+    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
+    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
   },
 ]
