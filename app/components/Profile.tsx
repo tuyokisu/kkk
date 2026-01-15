@@ -11,7 +11,7 @@ export default function ProfileCard() {
 
       {/* テキストのみのカード */}
       <div className="bg-[#1a1a1a] rounded-lg border border-neutral-800 p-8 md:p-12 shadow-2xl">
-        
+
         {/* 名前と肩書き */}
         <div className="mb-8 border-b border-neutral-800 pb-6">
           <h3 className="text-3xl md:text-4xl font-bold text-white mb-2 tracking-wide">

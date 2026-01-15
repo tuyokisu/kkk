@@ -23,7 +23,7 @@ export default function CoseCommission() {
   return (
     <section className="py-20 bg-neutral-900 text-white" id="commission">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* セクションヘッダー */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-4xl font-bold tracking-tight mb-4">
@@ -40,12 +40,12 @@ export default function CoseCommission() {
         */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {plans.map((plan) => (
-            <div 
+            <div
               key={plan.id}
               onClick={() => handleOpen(plan)} // カード全体をクリック可能に
               className={`
                 group cursor-pointer relative flex flex-col rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2
-                ${plan.isCustomQuote 
+                ${plan.isCustomQuote
                   ? 'bg-neutral-800 border-2 border-dashed border-neutral-600'
                   : 'bg-neutral-800 border border-neutral-700 hover:shadow-[0_0_20px_rgba(99,102,241,0.3)]'
                 }
@@ -76,9 +76,9 @@ export default function CoseCommission() {
               <p className="text-sm text-neutral-300 mb-6 flex-grow">
                 {plan.description}
               </p>
-              
+
               {/* ボタン風の装飾 (Linkではなくdiv) */}
-              <div 
+              <div
                 className={`
                   block w-full text-center py-3 rounded-lg font-bold transition-colors
                   ${plan.isCustomQuote
@@ -96,16 +96,16 @@ export default function CoseCommission() {
         {/* --- モーダル (ポップアップ) --- */}
         {selectedPlan && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-            
+
             {/* 1. 背景の黒幕 (クリックで閉じる) */}
-            <div 
+            <div
               className="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity"
               onClick={handleClose}
             ></div>
 
             {/* 2. モーダル本体 */}
             <div className="relative bg-neutral-800 border border-neutral-700 rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden animate-in fade-in zoom-in duration-200">
-              
+
               {/* ヘッダー */}
               <div className="p-6 md:p-8 border-b border-neutral-700 flex justify-between items-start bg-neutral-800">
                 <div>
@@ -117,7 +117,7 @@ export default function CoseCommission() {
                   </h3>
                 </div>
                 {/* 閉じるボタン (×) */}
-                <button 
+                <button
                   onClick={handleClose}
                   className="text-neutral-400 hover:text-white transition-colors p-1"
                 >
@@ -165,7 +165,7 @@ export default function CoseCommission() {
 
               {/* フッターアクション */}
               <div className="p-6 border-t border-neutral-700 bg-neutral-900/50 flex flex-col sm:flex-row gap-3">
-                <button 
+                <button
                   onClick={handleClose}
                   className="sm:w-auto w-full bg-transparent border border-neutral-600 text-neutral-300 hover:text-white hover:border-white font-bold py-3 px-6 rounded-lg transition-colors"
                 >

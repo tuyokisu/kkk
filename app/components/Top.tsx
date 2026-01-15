@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 export default function Top() {
- return (
+  return (
     <section id="top" className="relative h-screen flex items-center justify-center text-center text-white mb-24">
       <Image
         src="/oga00.png"
@@ -22,5 +22,5 @@ export default function Top() {
         </p>
       </div>
     </section>
-   );
+  );
 }

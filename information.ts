@@ -1,60 +1,60 @@
-import { Song, NewsDate} from "./types"
+import { Song, NewsDate } from "./types"
 
 
 //Youtubeの曲を以下の形式で追加していく。
-export const Songs:Song[] = [
+export const Songs: Song[] = [
   {
-  id:'1',
-  img:"/oga0.png",
-  title:"曲名",
-  url:"https://youtu.be/6EKUOxmZQNc?si=mNwotne09yLhN4QF"
+    id: '1',
+    img: "/oga0.png",
+    title: "曲名",
+    url: "https://youtu.be/6EKUOxmZQNc?si=mNwotne09yLhN4QF"
   },
   {
-  id:'2',
-  img:"/oga1.png",
-  title:"曲名",
-  url:"https://youtu.be/a442hNFdW_M?si=qOv0npDbKw2X0myU"
+    id: '2',
+    img: "/oga1.png",
+    title: "曲名",
+    url: "https://youtu.be/a442hNFdW_M?si=qOv0npDbKw2X0myU"
   },
   {
-  id:'3',
-  img:"/oga2.png",
-  title:"曲名",
-  url:"https://youtu.be/YK-aUIE06KE?si=zghRfXoKOqLTpEbU"
+    id: '3',
+    img: "/oga2.png",
+    title: "曲名",
+    url: "https://youtu.be/YK-aUIE06KE?si=zghRfXoKOqLTpEbU"
   },
   {
-  id:'4',
-  img:"/oga3.png",
-  title:"曲名",
-  url:"https://youtu.be/eUZEYjwB2_w?si=61k77jVEn32KR437"
+    id: '4',
+    img: "/oga3.png",
+    title: "曲名",
+    url: "https://youtu.be/eUZEYjwB2_w?si=61k77jVEn32KR437"
   },
   {
-  id:'5',
-  img:"/oga4.png",
-  title:"曲名",
-  url:"https://youtu.be/QbhQrvZvtGw?si=f3htjaLJJPUtJBBe"
+    id: '5',
+    img: "/oga4.png",
+    title: "曲名",
+    url: "https://youtu.be/QbhQrvZvtGw?si=f3htjaLJJPUtJBBe"
   },
   {
-  id:'6',
-  img:"/oga555.png",
-  title:"曲名",
-  url:"https://youtu.be/gJzAp-_dxc4?si=HOvpBBxBPfSm8vMw"
+    id: '6',
+    img: "/oga555.png",
+    title: "曲名",
+    url: "https://youtu.be/gJzAp-_dxc4?si=HOvpBBxBPfSm8vMw"
   },
 ]
 
 
 //記事の内容を以下の形式で記述する
-export const NewsDates:NewsDate[] =[
-  {id:1,date:'2010/11/3',content:"記事内容"},
-  {id:2,date:'2020/11/3',content:"記事内容"},
-  {id:3,date:'2030/11/3',content:"記事内容"},
-  {id:4,date:'2020/11/3',content:"記事内容"},
-  {id:5,date:'2020/11/3',content:"記事内容"},
-  {id:6,date:'2020/11/3',content:"記事内容"},
-  {id:7,date:'2020/11/3',content:"記事内容"},
-  {id:8,date:'2020/11/3',content:"記事内容"},
-  {id:9,date:'2020/11/3',content:"記事内容"},
-  {id:10,date:'2020/11/3',content:"記事内容"},
-  {id:11,date:'2020/11/3',content:"wwwwww"},
+export const NewsDates: NewsDate[] = [
+  { id: 1, date: '2010/11/3', content: "記事内容" },
+  { id: 2, date: '2020/11/3', content: "記事内容" },
+  { id: 3, date: '2030/11/3', content: "記事内容" },
+  { id: 4, date: '2020/11/3', content: "記事内容" },
+  { id: 5, date: '2020/11/3', content: "記事内容" },
+  { id: 6, date: '2020/11/3', content: "記事内容" },
+  { id: 7, date: '2020/11/3', content: "記事内容" },
+  { id: 8, date: '2020/11/3', content: "記事内容" },
+  { id: 9, date: '2020/11/3', content: "記事内容" },
+  { id: 10, date: '2020/11/3', content: "記事内容" },
+  { id: 11, date: '2020/11/3', content: "wwwwww" },
 ]
 
 
@@ -121,35 +121,92 @@ export const plans = [
   },
 ];
 
-export const media =[
+export const media = [
   {
-    id:'Youtube',
-    url:"https://www.youtube.com/@suragi6832",
-    name:'YouTube',
-    img:'/youtube-log.png'
+    id: 'Youtube',
+    url: "https://www.youtube.com/@suragi6832",
+    name: 'YouTube',
+    img: '/youtube-log.png'
   },
   {
-    id:'X',
-    url:"https://x.com/suragi2196?s=21&t=agcGAVABEL7hQDGfyeL9lw",
-    name:'X',
-    img:'/x-logo.png'
+    id: 'X',
+    url: "https://x.com/suragi2196?s=21&t=agcGAVABEL7hQDGfyeL9lw",
+    name: 'X',
+    img: '/x-logo.png'
   },
   {
-    id:'Instagram',
-    url:"https://www.instagram.com/ooga0522",
-    name:'Instagram',
-    img:'/insta-logo.png'
+    id: 'Instagram',
+    url: "https://www.instagram.com/ooga0522",
+    name: 'Instagram',
+    img: '/insta-logo.png'
   },
   {
-    id:'TikTok',
-    url:"https://www.tiktok.com/@suragi2196",
-    name:'TikTok',
-    img:'/tiktok-log.png'
+    id: 'TikTok',
+    url: "https://www.tiktok.com/@suragi2196",
+    name: 'TikTok',
+    img: '/tiktok-log.png'
   },
   {
-    id:'Spotify',
-    url:"https://open.spotify.com/intl-ja/artist/7sLzdoDmm8DjTr326Ik5rQ?si=kFGllm1sTZydLR0wuhRP7g",
-    name:'Spotify',
-    img:'/spotify-log.png' 
+    id: 'Spotify',
+    url: "https://open.spotify.com/intl-ja/artist/7sLzdoDmm8DjTr326Ik5rQ?si=kFGllm1sTZydLR0wuhRP7g",
+    name: 'Spotify',
+    img: '/spotify-log.png'
   }
+]
+
+//新しく発表する曲をここに入れてください。
+export const Nsong = [
+  {
+    id: '1',
+    img: "/oga0.png",
+    data: "2026/1/1",
+    title: "まんこ",
+    url: "/movie/fukai.mp4"
+  },
+]
+
+//ダウンロード曲
+export const Dsong = [
+  {
+    id: '1',
+    img: "/oga0.png",
+    title: "まんこ",
+    url: "/songs/test.wav"
+  },
+  {
+    id: '2',
+    img: "/oga0.png",
+    title: "まんこ",
+    url: "/songs/test.wav"
+  },
+  {
+    id: '3',
+    img: "/oga0.png",
+    title: "まんこ",
+    url: "/songs/test.wav"
+  },
+  {
+    id: '4',
+    img: "/oga0.png",
+    title: "まんこ",
+    url: "/songs/test.wav"
+  },
+  {
+    id: '5',
+    img: "/oga0.png",
+    title: "まんこ",
+    url: "/songs/test.wav"
+  },
+  {
+    id: '6',
+    img: "/oga0.png",
+    title: "まんこ",
+    url: "/songs/test.wav"
+  },
+  {
+    id: '7',
+    img: "/oga0.png",
+    title: "まんこ", 
+    url: "/songs/test.wav"
+  },
 ]

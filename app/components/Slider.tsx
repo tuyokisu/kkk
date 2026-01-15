@@ -27,70 +27,70 @@ export default function Slider() {
 
   return (
     <>
-<section id="musicVideo" className=" py-20">
-   <h2 className="text-4xl font-bold text-center mb-12 tracking-widest font-heading">MUSIC VIDEOS</h2>
-  
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        breakpoints={breakSetting}
-        centeredSlides={true}
-        loop={true}
-        speed={1500}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-       
-        pagination={{ el: "#pagination", clickable: true }}
-      
-      >
-    
-        {Songs.map((song) => {
-          return (
-        
-            <SwiperSlide key={song.id} >
-              <div className="group relative overflow-hidden">
+      <section id="musicVideo" className=" py-20">
+        <h2 className="text-4xl font-bold text-center mb-12 tracking-widest font-heading">MUSIC VIDEOS</h2>
 
-               <Link
-                 href={song.url}
-                 target="_blank"
-              >
-                
-              <Image
-                src={song.img}
-                width={700}
-                height={427}
-                className="
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          breakpoints={breakSetting}
+          centeredSlides={true}
+          loop={true}
+          speed={1500}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+
+          pagination={{ el: "#pagination", clickable: true }}
+
+        >
+
+          {Songs.map((song) => {
+            return (
+
+              <SwiperSlide key={song.id} >
+                <div className="group relative overflow-hidden">
+
+                  <Link
+                    href={song.url}
+                    target="_blank"
+                  >
+
+                    <Image
+                      src={song.img}
+                      width={700}
+                      height={427}
+                      className="
                 h-full w-full  gap-4 transition-all
                 duration-500
                 ease-in-out
                 group-hover:grayscale
                 group-hover:scale-105"
-                alt=""
-              />
-              
-              </Link>
+                      alt=""
+                    />
 
-            </div>
+                  </Link>
 
-            </SwiperSlide>
-         
-          
-          );
-        
-        })}
-      
-      </Swiper>
+                </div>
+
+              </SwiperSlide>
 
 
-          <div className="text-center mt-12">
-                <Link href="https://www.youtube.com/@suragi6832/videos"
-                target="_blank" className="inline-block border border-white/30 px-8 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition-colors">
-                    VIEW ALL
-                </Link>
-            </div>
- </section>
- </>
+            );
+
+          })}
+
+        </Swiper>
+
+
+        <div className="text-center mt-12">
+          <Link href="https://www.youtube.com/@suragi6832/videos"
+            target="_blank" className="inline-block border border-white/30 px-8 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition-colors">
+            VIEW ALL
+          </Link>
+        </div>
+      </section>
+    </>
 
   );
 }
