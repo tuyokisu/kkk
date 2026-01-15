@@ -42,9 +42,6 @@ next-env.d.ts
 
 # large media files
 *.mp4
-*.wav
-*.mp3
 *.mov
 *.avi
-/public/movie/
-/public/songs/
+

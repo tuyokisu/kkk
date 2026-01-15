@@ -171,49 +171,49 @@ export const Dsong = [
     id: '1',
     img: "/oga0.png",
     title: "test",
-    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
-    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
+    mix: "/mix/test.wav",
+    master: "/master/test.wav"
   },
   {
     id: '2',
     img: "/oga0.png",
     title: "test",
-    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
-    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
+    mix: "/mix/test.wav",
+    master: "/master/test.wav"
   },
   {
     id: '3',
     img: "/oga0.png",
     title: "test",
-    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
-    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
+    mix: "/mix/test.wav",
+    master: "/master/test.wav"
   },
   {
     id: '4',
     img: "/oga0.png",
     title: "test",
-    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
-    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
+    mix: "/mix/test.wav",
+    master: "/master/test.wav"
   },
   {
     id: '5',
     img: "/oga0.png",
     title: "test",
-    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
-    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
+    mix: "/mix/test.wav",
+    master: "/master/test.wav"
   },
   {
     id: '6',
     img: "/oga0.png",
     title: "test",
-    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
-    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
+    mix: "/mix/test.wav",
+    master: "/master/test.wav"
   },
   {
     id: '7',
     img: "/oga0.png",
     title: "test", 
-    mix: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav",
-    master: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/test.wav"
+    mix: "/mix/test.wav",
+    master: "/master/test.wav"
   },
 ]
